@@ -1,9 +1,8 @@
-| |pypi| |license| |coverage| |master_build|
-| |sonar_maintainability| |sonar_reliability| |sonar_security|
-
 Pure python module for (de)serialization to and from VDF that works just like ``json``.
 
-Tested and works on ``py2.7``, ``py3.3+``, ``pypy`` and ``pypy3``.
+A fork of `ValvePython/vdf <https://github.com/ValvePython/vdf>`_, which has apparently been abandoned.
+
+Supports Python ``3.3+``
 
 VDF is Valve's KeyValue text file format
 
@@ -15,17 +14,17 @@ https://developer.valvesoftware.com/wiki/KeyValues
 Install
 -------
 
-You can grab the latest release from https://pypi.org/project/vdf/ or via ``pip``
+**WARNING:** Only ValvePython's (out of date) version is on PyPI.
+
+Installing directly from ``github`` repository:
 
 .. code:: bash
 
-    pip install vdf
+	# master
+	pip install "git+https://github.com/solsticegamestudios/vdf"
 
-Install the current dev version from ``github``
-
-.. code:: bash
-
-    pip install git+https://github.com/ValvePython/vdf
+	# specific version
+	pip install "git+https://github.com/solsticegamestudios/vdf@v1.0"
 
 
 Problems & solutions
