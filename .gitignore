@@ -3,3 +3,6 @@ dist
 *.pyc
 .coverage
 *.swp
+build/
+venv*/
+env*/
