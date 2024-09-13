@@ -1,3 +1,5 @@
+| |coverage| |master_build|
+
 Pure python module for (de)serialization to and from VDF that works just like ``json``.
 
 A fork of `ValvePython/vdf <https://github.com/ValvePython/vdf>`_, which has apparently been abandoned.
@@ -138,24 +140,10 @@ of reassign the value to the existing key.
     :target: https://pypi.org/project/vdf/
     :alt: MIT License
 
-.. |coverage| image:: https://img.shields.io/coveralls/ValvePython/vdf/master.svg?style=flat
-    :target: https://coveralls.io/r/ValvePython/vdf?branch=master
+.. |coverage| image:: https://coveralls.io/repos/github/solsticegamestudios/vdf/badge.svg
+    :target: https://coveralls.io/github/solsticegamestudios/vdf
     :alt: Test coverage
 
-.. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=ValvePython_vdf&metric=sqale_rating
-    :target: https://sonarcloud.io/dashboard?id=ValvePython_vdf
-    :alt: SonarCloud Rating
-
-.. |sonar_reliability| image:: https://sonarcloud.io/api/project_badges/measure?project=ValvePython_vdf&metric=reliability_rating
-    :target: https://sonarcloud.io/dashboard?id=ValvePython_vdf
-    :alt: SonarCloud Rating
-
-.. |sonar_security| image:: https://sonarcloud.io/api/project_badges/measure?project=ValvePython_vdf&metric=security_rating
-    :target: https://sonarcloud.io/dashboard?id=ValvePython_vdf
-    :alt: SonarCloud Rating
-
-.. |master_build| image:: https://github.com/ValvePython/vdf/workflows/Tests/badge.svg?branch=master
-    :target: https://github.com/ValvePython/vdf/actions?query=workflow%3A%22Tests%22+branch%3Amaster
+.. |master_build| image:: https://github.com/solsticegamestudios/vdf/actions/workflows/testing.yml/badge.svg?branch=master
+    :target: https://github.com/solsticegamestudios/vdf/actions/workflows/testing.yml?query=branch%3Amaster
     :alt: Build status of master branch
-
-.. _DuplicateOrderedDict: https://github.com/rossengeorgiev/dota2_notebooks/blob/master/DuplicateOrderedDict_for_VDF.ipynb
