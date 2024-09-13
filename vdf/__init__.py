@@ -1,8 +1,8 @@
 """
 Module for deserializing/serializing to and from VDF
 """
-__version__ = "3.5"
-__author__ = "Rossen Georgiev"
+__version__ = "4.0"
+__author__ = "Rossen Georgiev / Solstice Game Studios"
 
 import re
 import struct
