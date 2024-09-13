@@ -34,10 +34,6 @@ Problems & solutions
   makes mapping to ``dict`` impossible. For this case the module provides ``vdf.VDFDict``
   that can be used as mapper instead of ``dict``. See the example section for details.
 
-- By default de-serialization will return a ``dict``, which doesn't preserve nor guarantee
-  key order on Python versions prior to 3.6, due to `hash randomization`_. If key order is
-  important on old Pythons, I suggest using ``collections.OrderedDict``, or ``vdf.VDFDict``.
-
 Example usage
 -------------
 
@@ -163,5 +159,3 @@ of reassign the value to the existing key.
     :alt: Build status of master branch
 
 .. _DuplicateOrderedDict: https://github.com/rossengeorgiev/dota2_notebooks/blob/master/DuplicateOrderedDict_for_VDF.ipynb
-
-.. _hash randomization: https://docs.python.org/2/using/cmdline.html#envvar-PYTHONHASHSEED
