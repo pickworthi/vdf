@@ -2,7 +2,7 @@ Pure python module for (de)serialization to and from VDF that works just like ``
 
 A fork of `ValvePython/vdf <https://github.com/ValvePython/vdf>`_, which has apparently been abandoned.
 
-Supports Python ``3.3+``
+Supports Python ``3.6+`` and PyPy ``3.10``
 
 VDF is Valve's KeyValue text file format
 
