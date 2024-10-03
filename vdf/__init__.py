@@ -60,6 +60,7 @@ def parse(fp, mapper=dict, merge_duplicate_keys=True, escaped=True):
     same key into one instead of overwriting. You can se this to ``False`` if you are
     using ``VDFDict`` and need to preserve the duplicates.
     """
+    mapper = dict if mapper is None else mapper
     if not issubclass(mapper, Mapping):
         raise TypeError("Expected mapper to be subclass of dict, got %s" % type(mapper))
     if not hasattr(fp, 'readline'):
@@ -298,6 +299,7 @@ def binary_loads(b, mapper=dict, merge_duplicate_keys=True, alt_format=False, ke
     table. Newer `appinfo.vdf` format stores this table the end of the file,
     and it is needed to deserialize the binary VDF objects in that file.
     """
+    mapper = dict if mapper is None else mapper
     if not isinstance(b, bytes):
         raise TypeError("Expected s to be bytes, got %s" % type(b))
 
