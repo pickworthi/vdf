@@ -487,6 +487,9 @@ def _binary_dump_gen(obj, level=0, alt_format=False):
                 yield BIN_INT32
             yield key + BIN_NONE
             yield int32.pack(value)
+        elif isinstance(value, bytes):
+            # IRP added to allow writing of byte values in shortcuts.vdf file
+            yield BIN_INT32 + key + BIN_NONE + value
         else:
             raise TypeError("Unsupported type: %s" % type(value))
 
